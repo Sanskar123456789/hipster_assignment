@@ -38,7 +38,7 @@
 }
 
 .theme3 .card {
-  @apply bg-white bg-opacity-80 rounded-xl shadow-md p-4 transition-transform transform hover:scale-105;
+  @apply bg-white bg-opacity-80 rounded-xl shadow-md p-4 transition-transform transform;
 }
 
 .theme1 .product-card {

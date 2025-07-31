@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 
 const Loader: React.FC = () => (
   <div className="flex justify-center items-center h-32">
