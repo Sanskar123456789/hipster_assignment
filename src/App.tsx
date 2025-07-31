@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <Router>
         {isLoggedIn ? (
           <>
-            <Header />
+            <Header setIsLogin={setIsLoggedIn}/>
             <div className="pt-20">
               <Routes>
                 <Route path="/" element={<Home />} />
