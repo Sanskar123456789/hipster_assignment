@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts (you should load these in index.html or via @import) */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.theme1 {
+  @apply bg-white text-gray-900 font-sans;
+}
+
+.theme2 {
+  @apply bg-gray-900 text-white font-serif;
+}
+
+.theme3 {
+  @apply bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 text-blue-900;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Layout styles */
+.theme1 .layout {
+  @apply p-4 max-w-4xl mx-auto;
+}
+
+.theme2 .layout {
+  @apply flex min-h-screen;
+}
+.theme2 .sidebar {
+  @apply w-64 bg-gray-800 text-white p-4;
+}
+.theme2 .content {
+  @apply flex-1 p-6;
+}
+
+.theme3 .layout {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4;
+}
+
+.theme3 .card {
+  @apply bg-white bg-opacity-80 rounded-xl shadow-md p-4 transition-transform transform hover:scale-105;
+}
+
+.theme1 .product-card {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.theme2 .product-card {
+  @apply bg-gray-800 text-white;
+}
+
+.theme3 .product-card {
+  @apply bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 text-blue-900;
+}
+
+/* General transition */
+body {
+  @apply transition-colors duration-300;
+  height: 100vh;
+}
